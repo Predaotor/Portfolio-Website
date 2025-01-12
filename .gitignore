@@ -1,0 +1,13 @@
+
+
+# Environment variables
+.env
+__pycache__/
+venv/
+# IDE specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

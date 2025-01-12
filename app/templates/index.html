@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<!-- Profile, Skills, and Certifications Section -->
+<div class="container mt-5"><!-- Profile, Skills, and Certifications Section -->
+    <div class="row"><!-- Profile, Skills, and Certifications Section -->
+        <!-- Profile Picture -->
+        <div class="col-lg-4 text-center mb-4">
+            <img src="{{ url_for('static', filename='images/lado.jpg') }}" alt="Profile Picture" class="profile-img img-fluid rounded-circle shadow">
+        </div>
+
+        <!-- Skills -->
+        <div class="col-lg-4 text-left mb-4" id="skills">
+            <h2 class="text-secondary">Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> Python, SQL, JavaScript (basics), HTML, CSS</li>
+                <li><strong>Version Control:</strong> Git and GitHub</li>
+                <li><strong>Frameworks:</strong> Django, Flask</li>
+                <li><strong>Tools:</strong> Docker, Postman</li>
+                <li><strong>Databases:</strong> PostgreSQL, MySQL</li>
+            </ul>
+        </div>
+
+        <!-- Certifications -->
+        <div class="col-lg-4 text-left mb-4" id="certifications">
+            <h2 class="text-secondary">Certifications</h2>
+            <h3>Coursera</h3>
+            <ul>
+                <li><a href="https://www.coursera.org/account/accomplishments/verify/XKPKWNERGRE5" class="certification-link">Introduction to Cloud Computing</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/verify/PSPCQJN7NKXD" class="certification-link">Introduction to Git and GitHub</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/verify/CWLV44NSZEVE" class="certification-link">Introduction to Web Development with HTML, CSS, JavaScript</a></li>
+                <li><a href="https://www.coursera.org/account/accomplishments/professional-cert/4SXV3QJUYVRA" class="certification-link">Google IT Automation with Python</a></li>
+            </ul>
+            <h3>Udemy</h3>
+            <ul>
+                <li><a href="https://www.udemy.com/certificate/UC-4efec004-e791-4151-b60f-c27303957bf5/" class="certification-link">REST APIs with Flask</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- About Me and Contact Information Section -->
+        <!-- About Me -->
+        <div class="row"><!-- About Me Section -->
+            <div class="col-lg-6" id="about"><!-- Closing About Me div -->
+                <div class="jumbotron p-4 shadow-sm bg-light rounded">
+                    <h2  style="text-align:center">About Me</h2>
+                    <p>
+                        I am a self-taught Python Backend Developer with a passion for building scalable and efficient systems. 
+                        My journey into software development is fueled by curiosity, perseverance, and a love for solving complex challenges.
+                    </p>
+                    <p>
+                        Currently, I am a dedicated student in <strong>Nucamp-Flex’s Back-End, SQL, and DevOps Developer with Python</strong> program. 
+                        My academic journey also includes studies at Akaki Tsereteli State University in Georgia, where I pursued History with Computer Science as a minor subject. 
+                        Although I did not complete this program, my determination to grow in the field of technology remains unwavering.
+                    </p>
+                    <p>
+                        As a developer just starting out, I am continuously learning and refining my skills through hands-on projects and real-world problem-solving. 
+                        I am motivated by the opportunity to create meaningful solutions and contribute to innovative projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+ 
+
+        <!-- Contact Information -->
+        
+            <div class="col-lg-6" id="contact">
+                <div class="jumbotron p-4 shadow-sm bg-light rounded">
+                    <h2 style="text-align:center">Contact Information</h2>
+                    <ul class="list-unstyled">
+                        <li><strong>Email:</strong> lado.marshania621@gmail.com</li>
+                        <li><strong>Phone:</strong> +48 732-720-489</li>
+                        <li><strong>Location:</strong> Poland, Lodz</li>
+                    </ul>
+               
+            </div>
+        </div>
+  
+
+{% endblock %}
