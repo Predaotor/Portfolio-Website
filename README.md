@@ -48,7 +48,7 @@ portfolio-website
 ## Usage
 1. Run the application:
    ```
-   python src/app.py
+   python app/app.py
    ```
 2. Open your web browser and go to `http://127.0.0.1:5000` to view the website.
 
